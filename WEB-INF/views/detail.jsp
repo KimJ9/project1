@@ -347,14 +347,14 @@
 
     <!-- 탭 메뉴와 상단 [목록으로] 버튼 -->
     <!--<a href="${pageContext.request.contextPath}/list?contentTypeId=${param.prevContentTypeId}&sido=${param.sido}&gungu=${param.gungu}&mapX=${param.mapX}&mapY=${param.mapY}&radius=${param.radius}&arrange=${param.arrange}&pageNo=${param.pageNo}">목록으로</a>-->
+
     <div class="header-container">
         <div class="tabs">
-            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=common&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}" class="${tab == 'common' ? 'active' : ''}">공통정보</a>
-            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=intro&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}" class="${tab == 'intro' ? 'active' : ''}">소개정보</a>
-            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=info&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}" class="${tab == 'info' ? 'active' : ''}">반복정보</a>
-            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=image&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}" class="${tab == 'image' ? 'active' : ''}">추가이미지</a>
-            <a href="${pageContext.request.contextPath}/${param.isFestival == 'true' ? 'festival' : 'search'}?contentTypeId=${searchContentTypeId}&mapX=${mapX}&mapY=${mapY}&radius=${radius != '' ? radius : '4000'}&pageNo=${pageNo}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}" class="back-link">목록으로</a>
-            
+            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=common&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}&isFestival=${param.isFestival}" class="${tab == 'common' ? 'active' : ''}">공통정보</a>
+            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=intro&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}&isFestival=${param.isFestival}" class="${tab == 'intro' ? 'active' : ''}">소개정보</a>
+            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=info&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}&isFestival=${param.isFestival}" class="${tab == 'info' ? 'active' : ''}">반복정보</a>
+            <a href="${pageContext.request.contextPath}/detail?contentId=${contentId}&mapX=${mapX}&mapY=${mapY}&radius=${radius}&pageNo=${pageNo}&tab=image&contentTypeId=${contentTypeId}&searchContentTypeId=${searchContentTypeId}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}&isFestival=${param.isFestival}" class="${tab == 'image' ? 'active' : ''}">추가이미지</a>
+            <a href="${pageContext.request.contextPath}/${param.isFestival == 'true' ? 'festival' : 'search'}?contentTypeId=${searchContentTypeId}&mapX=${mapX}&mapY=${mapY}&radius=${radius != '' ? radius : '4000'}&pageNo=${pageNo}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}&isFestival=${param.isFestival}" class="back-link">목록으로</a>
         </div>
     </div>
 
@@ -839,7 +839,7 @@
     </div>
 
     <!-- 하단 [목록으로] 버튼 -->
-    <a href="${pageContext.request.contextPath}/${param.isFestival == 'true' ? 'festival' : 'search'}?contentTypeId=${searchContentTypeId}&mapX=${mapX}&mapY=${mapY}&radius=${radius != '' ? radius : '4000'}&pageNo=${pageNo}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}" class="back-link">목록으로 돌아가기</a>
+    <a href="${pageContext.request.contextPath}/${param.isFestival == 'true' ? 'festival' : 'search'}?contentTypeId=${searchContentTypeId}&mapX=${mapX}&mapY=${mapY}&radius=${radius != '' ? radius : '4000'}&pageNo=${pageNo}&arrange=${arrange}&sido=${param.sido}&gungu=${param.gungu}&isFestival=${param.isFestival}" class="back-link">목록으로 돌아가기</a>
     <!-- JavaScript for enlarged image functionality -->
     <script>
         function showEnlargedImage(src, alt) {

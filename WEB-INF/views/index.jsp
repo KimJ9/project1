@@ -778,7 +778,7 @@
                         </select>
                     </div>
                     <button type="submit" id="searchBtn">검색</button>
-                    <button type="button" id="festivalBtn">행사중/예정</button>
+                    <button type="button" id="festivalBtn">전국행사/예정</button>
                 </div>
             </div>
         </form>
@@ -886,7 +886,7 @@
 
     <c:if test="${not empty festivalItems}">
         <div class="total-count">
-            축제 중 (총 ${festivalTotalCount}건)
+            전국 행사 중 / 예정 (총 ${festivalTotalCount}건)
         </div>
 
         <div class="results">
